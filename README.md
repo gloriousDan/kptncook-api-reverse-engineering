@@ -80,9 +80,6 @@ Returns one recipe by its id. You can search by a recipe's uid or identifier:
     `/recipes/search`
 * **Method:**  
     `POST`
-* **Request Headers:**  
-   `Token`: insert the accessToken returned when logging in here  
-   **example**: `Token: 1*****5-8**3-4**1-5**b-e*********d`
 * **Request Parameters:**  
    `kptnkey`  
    **example**: `?kptnkey=6*****y-o**k-I*****J-j****6`
