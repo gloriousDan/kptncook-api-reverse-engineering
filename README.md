@@ -81,8 +81,11 @@ Returns one recipe by its id. You can search by a recipe's uid or identifier:
 * **Method:**  
     `POST`
 * **Request Parameters:**  
-   `kptnkey`  
-   **example**: `?kptnkey=6*****y-o**k-I*****J-j****6`
+  * `kptnkey`  
+    **example**: `?kptnkey=6*****y-o**k-I*****J-j****6`  
+  * `lang`  
+    **possible values**: en, de, fr, pt, es
+    **note**: When using the lang parameter the api response switches to a different (new) format.
 * **Request Body:**  
     **type**: json  
     **example**:  
@@ -132,7 +135,7 @@ Returns one recipe by its id. You can search by a recipe's uid or identifier:
     ]
     ```
 
-## Daily Favorites 
+## Daily Favorites (Superseeded by a new endpoint)
 Returns the 3 daily featured recipes in full detail
 * **kptnkey required:**  
     Yes
