@@ -117,7 +117,7 @@ Returns one recipe by its id. You can search by a recipe's uid or identifier:
     '
     ```
 * **Request Answer:**  
-    **example**:  
+    **example (old)**:  
     ```json
     [
         {
@@ -129,6 +129,23 @@ Returns one recipe by its id. You can search by a recipe's uid or identifier:
                 "en": "Low Carb Tarte Flambée with Serrano Ham & Cream Cheese",
                 ...
             },
+            ...
+        },
+        ...
+    ]
+    ```  
+    **example (new with lang set)**:  
+    ```json
+    [
+        {
+            "_id": {
+                "$oid": "59b68c8d2c00000b0535125a"
+            },
+            "title": "Low Carb Tarte Flambée with Serrano Ham & Cream Cheese",
+            "rtype": "Pork",
+            "gdocs": "1046",
+            "authorComment": "Flourless but so delicious!",
+            "uid": "315c3c32",
             ...
         },
         ...
