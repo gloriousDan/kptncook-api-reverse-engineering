@@ -15,9 +15,9 @@ Then just append this key to each call like this: `https://mobile.kptncook.com/<
 ## Login
 Logs user in and returns user info, the user's access token, name and the user's favorite recipe's ids.
 * **kptnkey required:**  
-    No
+    ? (not sure)
 * **URL:**  
-    `/login/userpass`
+    `/auth/login`
 * **Method:**  
     `POST`
 * **Request Body:**  
@@ -43,7 +43,9 @@ Logs user in and returns user info, the user's access token, name and the user's
         "inviteCode": "4****4"
     }
     ```
-
+* **Note:**  
+  This route changed in 2025, source for the updated endpoint: https://github.com/ephes/kptncook/issues/57#issuecomment-3015026100
+    
 ## Favorites
 Gets all favorites of the logged in user and returns their IDs as a list
 * **kptnkey required:**  
